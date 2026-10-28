@@ -1,0 +1,33 @@
+{
+  "name": "@aphrody/fuzzy",
+  "version": "1.4.7",
+  "description": "First-party Bitap fuzzy search with score parity against fuse.js 7.1.0 (string lists, keyed object lists, weights, field norm)",
+  "license": "Apache-2.0",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "typecheck": "bun check --no-script --noEmit",
+    "test": "bun test",
+    "lint": "bun lint --no-script src test scripts",
+    "fixtures": "bun scripts/gen-fixtures.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "@types/node": "^26.6.5"
+  },
+  "engines": {
+    "bun": ">=1.4.4"
+  }
+}
